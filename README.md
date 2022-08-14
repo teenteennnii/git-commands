@@ -124,31 +124,43 @@ test/
 
 ## Undo Changes and Recover Files
 
-> TODO: enter the git command to do each of these
-
 1.  Display the differences between your *working copy* of `a.py` and the `a.py` in the *local repository* (HEAD revision):
+      ```
+      git diff
+      ```
 
 2. Display the differences between your *working copy* of `a.py` and the version in the *staging area*. (But, if a.py is not in the staging area this will compare working copy to HEAD revision):
+   ```
+
+   ```
 
 3. **View changes to be committed:** Display the differences between files in the staging area and the versions in the repository. (You can also specify a file name to compare just one file.) 
-
+   ```
+   git status
+   ```
 
 4. **Undo "git add":** If `main.py` has been added to the staging area (`git add main.py`), remove it from the staging area:
+   ```
+   git restore --staged main.py 
+   ```
 
 
 5. **Recover a file:** Command to replace your working copy of `a.py` with the most recent (HEAD) version in the repository.  This also works if you have deleted your working copy of this file.
+   ```
+   git checkout HEAD a.py
+   ```
 
 
 6. **Undo a commit:** Suppose you want to discard some commit(s) and move both HEAD and "master" to an earlier revision (an earlier commit)  Suppose the git commit graph looks like this (`aaaa`, etc, are the commit ids)
    ```
    aaaa ---> bbbb ---> cccc ---> dddd [HEAD -> master]
    ``` 
-   The command to reset HEAD and master to the commit id `bbbb`:
+   The command to reset HEAD and master to the commit id `bbbb`: `git checkout bbbb`
 
 
 7. **Checkout old code:** Using the above example, the command to replace your working copy with the files from commit with id `aaaa`:
    ```
-   todo your answer here
+   git checkout aaaa
    ```
     Note:
     - Git won't let you do this if you have uncommitted changes to any "tracked" files.
@@ -164,11 +176,21 @@ test/
    Some versions of git have an *alias* "log1" for this (`git log1`).
 
 2. Show the history (as above) including *all* branches in the repository and include a graph connecting the commits:
-
+   ```
+   aaa2bbc moved src directory
+   a9e6a30 initial commit
+   ```
 
 3. List all the files in the current branch of the repository:
    ```
-   todo your answer
+   .gitignore
+   README.md
+   a.py
+   b.py
+   test/test_a.py
+   test/test_b.py
+   test/test_c.py
+   out/a.exe
    ```
    example output:
    ```
@@ -183,29 +205,41 @@ test/
 
 ## Branch and Merge
 
-> TODO write the commands to do each of these
 1. Create a new branch named `dev-foo`:
- 
+   ```
+   git branch "dev-foo"
+   ```
+
 2. Display the name of your current branch:
+   ```
+   git branch --show-current
+   ```
 
 3. List the names of **all** branches, including remote branches:
+   ```
+   git branch -a
+   ```
 
 4. Switch your working copy to the branch named `dev-foo`:
+   ```
+   git cheackout dev-foo
+   ```
 
 5. **Merge:** To merge the work from `dev-foo` into the master branch, perform these steps:
-   > TODO: write a description of the steps and the git command(s) for each step
    1. step one
       ```
-      git do something
+      git checkout dev-foo
       ```
    2. step two
       ```
-      git do something else
+      git merge master
       ```
 
 
 6. Describe under what conditions a merge may fail.
-
+   - A merge will fail to start when Git sees there are changes in either the working directory or staging area of the current project.
+   - A failure DURING a merge indicates a conflict between the current local branch and the branch being merged. This indicates a conflict with another developers code.
+   
 
 
 
