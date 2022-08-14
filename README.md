@@ -46,11 +46,11 @@ In this file, directory paths are written with a forward slash as on MacOS, Linu
    ```
 
 3. There are 2 ways to create a local Git repository.  What are they?
-   - todo: briefly describe first way
-   - todo: briefly describe second way
+   - Use `git init`.
+   - Use `git clone`.
 
 4. When you create a git repository by entering `git init`, Git will create a "hidden" directory for the local repository.  Where is the directory for this local repository (relative to the directory where you typed "git init")?
-
+   - In directory that you type `git init`.
 
 
 ## Adding and Changing Things
@@ -67,30 +67,40 @@ test/
     test_a.py
     ...
 ```     
-> TODO: Write the git command to perform each of these:
 
 1. Add README.md and *everything* in the `src` directory to the git staging area.
    ```
-   todo  your answer here
+   git add README.md
+   git add src
    ```
 
 2. Add `test/test_a.py` to the staging area (but not any other files).
    ```
-   todo  your answer here
+   git add test/test_a.py
    ```
 
 3. List the files in the staging area.
-
+   ```
+   README.md
+   src/a.py
+   src/b.py
+   src/c.py
+   test/test_a.py
+   ```
 
 4. Remove `README.md` from the staging area. (Useful if you accidentally add something you don't want to commit.)
-
+   ```
+   git rm --cached README.md 
+   ```
 
 5. Commit everything in the staging area to the repository.
-
+   ```
+   git commit
+   ```
 
 6. Describe 2 steps to configure the repository so git will ignore all files in the `out/` directory:
-   - step one
-   - step two
+   - step one : Create `.igignore` directory.
+   - step two : Add `out/` in `.gitignore` directory.
 
 7. Command to move all the .py files from `src` to the top-level directory of this repository, so they are also moved in the Git repo.
 
