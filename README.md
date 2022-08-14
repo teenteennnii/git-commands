@@ -99,21 +99,28 @@ test/
    ```
 
 6. Describe 2 steps to configure the repository so git will ignore all files in the `out/` directory:
-   - step one : Create `.igignore` directory.
-   - step two : Add `out/` in `.gitignore` directory.
+   - step one : Create `.igignore` file.
+   - step two : Add `out/` in `.gitignore` file.
 
 7. Command to move all the .py files from `src` to the top-level directory of this repository, so they are also moved in the Git repo.
-
+   ```
+   git mv src/*.py src/..
+   ```
 
 8. Commit this change with the message "moved src directory":
-
+   ```
+   git commit -m "moved src directory"
+   ```
 
 9. Command to add **all changed files** (but not untracked files) to the staging area using a single command.
-
+   ```
+   git add -u
+   ```
 
 10. **Delete** the file `c.py` from your working copy **and** the repository:
-
-
+      ```
+      git rm c.py
+      ```
 
 ## Undo Changes and Recover Files
 
