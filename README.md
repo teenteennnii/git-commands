@@ -15,7 +15,6 @@
 
 ## Using Git
 
-
 [Basics](#basics)    
 [Adding and Changing Things](#adding-and-changing-things)    
 [Undo Changes and Recover Files](#undo-changes-and-recover-files)    
@@ -28,7 +27,6 @@
 #### Note on Paths
 
 In this file, directory paths are written with a forward slash as on MacOS, Linux, and the Windows-Bash shell: `/dir1/dir2/somefile`.    
-
 
 ## Basics
 
@@ -51,7 +49,6 @@ In this file, directory paths are written with a forward slash as on MacOS, Linu
 
 4. When you create a git repository by entering `git init`, Git will create a "hidden" directory for the local repository.  Where is the directory for this local repository (relative to the directory where you typed "git init")?
    - In directory that you type `git init`.
-
 
 ## Adding and Changing Things
 
@@ -144,12 +141,10 @@ test/
    git restore --staged main.py 
    ```
 
-
 5. **Recover a file:** Command to replace your working copy of `a.py` with the most recent (HEAD) version in the repository.  This also works if you have deleted your working copy of this file.
    ```
    git checkout HEAD a.py
    ```
-
 
 6. **Undo a commit:** Suppose you want to discard some commit(s) and move both HEAD and "master" to an earlier revision (an earlier commit)  Suppose the git commit graph looks like this (`aaaa`, etc, are the commit ids)
    ```
@@ -166,7 +161,6 @@ test/
     - Git won't let you do this if you have uncommitted changes to any "tracked" files.
     - Untracked files are ignored, so after doing this command they will still be in your working copy.
  
-
 ## Viewing Commits
 
 1. Show the history of commits, using one line per commit:
@@ -202,7 +196,6 @@ test/
    test/test_b.py
    ```
 
-
 ## Branch and Merge
 
 1. Create a new branch named `dev-foo`:
@@ -235,27 +228,20 @@ test/
       git merge master
       ```
 
-
 6. Describe under what conditions a merge may fail.
    - A merge will fail to start when Git sees there are changes in either the working directory or staging area of the current project.
    - A failure DURING a merge indicates a conflict between the current local branch and the branch being merged. This indicates a conflict with another developers code.
    
-
-
-
 ## Favorites
 
-> TODO: Add *at least* 1 git task that (a) that you'd like to remember, or (b) you think is really useful, and the git command(s) to do it.
-
-
+This is my favorites git : [Facbook Video Downloader](https://github.com/sameera-madushan/Facebook-Video-Downloader), That you can run with python and downloads video form facebook.
 
 ---
 ## Resources
 
-> TODO: Add your favorite Git resources (at least 1)
-
 [Pro Git Online Book][ProGit] Chapters 2 & 3 contain the essentials. Downloadable PDF is also available.     
 [Visual Git Reference](https://marklodato.github.io/visual-git-guide) one page with illustrations of git commands.
+[Atlessian](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud) website that contain git basic and easy to understand.
 
 Try Git:
 
