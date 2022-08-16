@@ -18,7 +18,7 @@
    fatal:  The current branch dev-foo has no upstream branch. 
    ```
    Explain this error.
-   > The reason is in a new repository, there is no branch. So when you are pushing for the first time to an empty upstream repository, that upstream repository has no branch of the same name.
+   - The reason is in a new repository, there is no branch. So when you are pushing for the first time to an empty upstream repository, that upstream repository has no branch of the same name.
 
 
 4. The command to push `dev-foo` to `origin` as a **new remote branch** on `origin` is:
