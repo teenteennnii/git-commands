@@ -239,9 +239,9 @@ This is my favorites git : [Facbook Video Downloader](https://github.com/sameera
 ---
 ## Resources
 
-[Atlessian](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud) website that contain git basic and easy to understand.
-[Pro Git Online Book][ProGit] Chapters 2 & 3 contain the essentials. Downloadable PDF is also available.     
-[Visual Git Reference](https://marklodato.github.io/visual-git-guide) one page with illustrations of git commands.
+[Pro Git Online Book][ProGit] Chapters 2 & 3 contain the essentials. Downloadable PDF is also available.       
+[Visual Git Reference](https://marklodato.github.io/visual-git-guide) one page with illustrations of git commands.  
+[Atlessian](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud) website that contain git basic and easy to understand.  
 
 Try Git:
 
