@@ -1,3 +1,4 @@
+# Git Quick Basic 
 > **Instructions**
 > 
 > 1. Read Chapters 2 & 3 of [Pro Git][ProGit]. The chapters are short.
