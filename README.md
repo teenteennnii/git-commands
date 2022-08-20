@@ -243,6 +243,7 @@ This is my favorites git : [Facbook Video Downloader](https://github.com/sameera
 [Pro Git Online Book][ProGit] Chapters 2 & 3 contain the essentials. Downloadable PDF is also available.       
 [Visual Git Reference](https://marklodato.github.io/visual-git-guide) one page with illustrations of git commands.  
 [Atlessian](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud) website that contain git basic and easy to understand.  
+[Google Classroom](https://classroom.google.com/u/1/w/NDk2ODk1MDE0NTgy/tc/NTM3OTY5MzI3NzYw) contain the documents used in the classroom.  
 
 Try Git:
 
@@ -255,4 +256,5 @@ Try Git:
 [VisualizeGit]: http://git-school.github.io/visualizing-git/ "Online tools draws a graph of commits in a repo as you type"
 [markdown-cheatsheet]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 [github-markdown]: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
-[vscode-markdown-preview-enhanced]: https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced
+[vscode-markdown-preview-enhanced]: https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced  
+
